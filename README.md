@@ -1,78 +1,103 @@
-🫀 Heart Disease Prediction Using Machine Learning
-📌 Project Overview
-This project builds a machine learning model to predict the presence of heart disease using clinical patient data.
+# 🫀 Heart Disease Risk Prediction App
 
-The goal is to assist in early risk identification using statistical and machine learning techniques.
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-success)
+![Machine Learning](https://img.shields.io/badge/Model-Logistic%20Regression-orange)
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
 
-📊 Dataset
-Source: UCI Heart Disease Dataset
+---
 
-Total Records: 303
+## 🚀 Live Demo
 
-Features: 13 clinical features + 1 target variable
+🔗 https://your-streamlit-link.streamlit.app
 
-Target:
+---
 
-0 → No heart disease
+## 📌 Project Overview
 
-1 → Heart disease present
+This project predicts the likelihood of heart disease using a Logistic Regression model trained on a medical dataset containing 303 patient records and 13 clinical features.
 
-No missing values were found in the dataset.
+The application is deployed using Streamlit Cloud and provides a clean, interactive UI for real-time predictions.
 
-🔍 Exploratory Data Analysis
-Key insights:
+---
 
-Chest pain type (cp) shows strong correlation with heart disease.
+## 🧠 Model Information
 
-Maximum heart rate achieved (thalach) is positively correlated.
+- Algorithm: Logistic Regression
+- Dataset Size: 303 records
+- Features: 13 medical attributes
+- Target: Heart Disease (0 = No, 1 = Yes)
+- Accuracy: XX% (update with your score)
 
-Exercise induced angina (exang), oldpeak, and number of major vessels (ca) are important predictors.
+---
 
-Cholesterol showed weak statistical correlation in this dataset.
+## 📊 Features Used
 
-Average patient age: 54.36 years.
+- Age
+- Sex
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate
+- Exercise Induced Angina
+- ST Depression
+- Slope
+- Number of Major Vessels
+- Thalassemia
 
-🤖 Models Used
-Logistic Regression (with feature scaling)
+---
 
-Random Forest Classifier
+## 📷 Application Preview
 
-Logistic Regression performed better on this dataset.
+![Home](image.png)
 
-📈 Model Performance
-Accuracy: ~XX%
+![Prediction](image-1.png)
 
-ROC-AUC Score: ~XX
+---
 
-Good recall for detecting disease cases
+## 🏗 Project Structure
 
-Logistic Regression generalized better due to small dataset size and near-linear feature relationships.
-
-🏥 Business Impact
-This model can help:
-
-Identify high-risk patients early
-
-Support preventive healthcare decisions
-
-Reduce late-stage cardiac complications
-
-🚀 How to Run
-Clone repository
-
-Create virtual environment
-
-Install requirements
-
-Run Streamlit app
-
-
-📂 Project Structure
-heart-disease-prediction/
+Heart-Disease-Prediction/
 │
-├── data/
-├── notebooks/
 ├── src/
-│   └── heart_model.pkl
+│ └── heart_model.pkl
+│
+├── notebooks/
+│ └── heart_analysis.ipynb
+│
+├── screenshots/
+│ ├── home.png
+│ └── prediction.png
+│
 ├── app.py
-└── README.md
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+
+---
+
+## ⚙ Installation (Local Setup)
+
+git clone https://github.com/karam186/Heart-Disease-Prediction.git
+cd Heart-Disease-Prediction
+pip install -r requirements.txt
+streamlit run app.py
+
+---
+
+<!-- 💡 Future Improvements -->
+
+Add feature importance visualization
+
+Add model comparison (Random Forest, XGBoost)
+
+Add SHAP explainability
+
+Deploy with Docker
+
+👨‍💻 Author
+Karam
+Data Science Enthusiast
