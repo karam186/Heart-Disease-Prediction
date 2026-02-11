@@ -4,3 +4,4 @@ __pycache__/
 data/
 *.pkl
 .ipynb_checkpoints/
+!src/heart_model.pkl
